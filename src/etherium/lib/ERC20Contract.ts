@@ -1,12 +1,12 @@
 import path from "path";
 import Web3 from "web3";
 import { Contract } from "web3-eth-contract";
-import { GANACHE, NETWORK_URL } from "../../constant/URLS";
+import { GANACHE, NETWORK_URL } from "../../constants/URLS";
 import Wallet from "../../types/Wallet";
 import compileSol from "./compileSol";
 import deployContract from "./deployContract";
 import { TransactionReceipt } from "web3-core";
-import ETH_UNITS from "../../constant/ETH_UNITS";
+import ETH_UNITS from "../../constants/ETH_UNITS";
 import BigNumber from "bignumber.js";
 
 class ERC20Contract {

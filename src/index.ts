@@ -1,10 +1,10 @@
-import { OWNER_ADDRESS, OWNER_PRIVATE } from "./constant/ADDRESSES";
+import { OWNER_ADDRESS, OWNER_PRIVATE } from "./constants/ADDRESSES";
 import Wallet from "./types/Wallet";
 import ganache from "ganache-cli";
 import ENVIRONMENTS from "./enum/ENVIRONMENTS.enum";
-import GANACHE_ACCOUNTS from "./constant/GANACHE_ACCOUNTS";
+import GANACHE_ACCOUNTS from "./constants/GANACHE_ACCOUNTS";
 import runServer from "./runServer";
-import { NETWORK_URL } from "./constant/URLS";
+import { NETWORK_URL } from "./constants/URLS";
 import distributedAccountsFromJSON from "./accounts.json";
 import dotenv from "dotenv";
 

@@ -2,7 +2,7 @@ import path from "path";
 import { ERC20Contract } from "./etherium";
 import Wallet from "./types/Wallet";
 import express from "express";
-import TOKEN_SUPPLY from "./constant/TOKEN_SUPPLY";
+import TOKEN_SUPPLY from "./constants/TOKEN_SUPPLY";
 
 const runServer = (
   ownerWallet: Wallet,
