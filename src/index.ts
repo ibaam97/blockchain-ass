@@ -1,16 +1,14 @@
-import path from "path";
 import { OWNER_ADDRESS, OWNER_PRIVATE } from "./constant/ADDRESSES";
-import { ERC20Contract } from "./etherium";
 import Wallet from "./types/Wallet";
-import express from "express";
-
 import ganache from "ganache-cli";
 import ENVIRONMENTS from "./enum/ENVIRONMENTS.enum";
-import ETH_UNITS from "./constant/ETH_UNITS";
 import GANACHE_ACCOUNTS from "./constant/GANACHE_ACCOUNTS";
 import runServer from "./runServer";
 import { NETWORK_URL } from "./constant/URLS";
 import distributedAccountsFromJSON from "./accounts.json";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const ganachePort = 8545;
 const server = ganache.server({

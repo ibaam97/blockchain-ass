@@ -1,7 +1,11 @@
 import ENVIRONMENTS from "../enum/ENVIRONMENTS.enum";
 
+import dotenv from "dotenv";
+
+dotenv.config();
+
 export const INFURA =
-  "https://ropsten.infura.io/v3/18504d9eae484de28cc710c5e7ac954b";
+  `https://ropsten.infura.io/v3/${process.env.INFURA_TOKEN}`;
 
 export const GANACHE = "http://127.0.0.1:7545";
 

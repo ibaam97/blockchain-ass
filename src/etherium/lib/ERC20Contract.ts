@@ -15,6 +15,7 @@ class ERC20Contract {
     filepath: string,
     network_url: string = NETWORK_URL
   ) {
+
     const compiledContract = compileSol(filepath, "erc20");
 
     this.abi = compiledContract.contracts.erc20.myToken.abi;

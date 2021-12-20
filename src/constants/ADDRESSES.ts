@@ -1,13 +1,18 @@
 import ENVIRONMENTS from "../enum/ENVIRONMENTS.enum";
 
+import dotenv from "dotenv";
+
+dotenv.config();
+
 export const OWNER_ADDRESS_GANACHE =
   "0x15a04b6Edd655f6772178A95Ba1E175530a294d1";
 export const OWNER_PRIVATE_GANACHE =
   "0x532ef91199a978dc2cc34e15276c1b4132f9ac6cfdd87b5d02706897399bc52e";
 
-export const OWNER_ADDRESS_LIVE = "0x47525237B1ceBFcB8931D80Df881ac3220C68765";
-export const OWNER_PRIVATE_LIVE =
-  "0x8fcfef1751ed4e28ca0377dc7e86455439e80b22129ff610378d8eb55dc18589";
+export const OWNER_ADDRESS_LIVE = process.env.OWNER_ADDRESS_LIVE;
+export const OWNER_PRIVATE_LIVE = process.env.OWNER_PRIVATE_LIVE;
+
+console.log(OWNER_ADDRESS_LIVE, OWNER_PRIVATE_LIVE)
 
 export const OWNER_ADDRESS =
   process.env.ENVIRONMENT === ENVIRONMENTS.dev

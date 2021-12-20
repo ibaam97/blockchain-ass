@@ -4,9 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ENVIRONMENT=dev nodemon",
-    "start:prod": "ENVIRONMENT=prod nodemon",
-    "dev": "ts-node-dev --respawn ./src",
+    "start:dev": "ENVIRONMENT=dev nodemon",
+    "start:prod": "ENVIRONMENT=prod ts-node ./src/index.ts",
     "ganache-server": "ganache-cli --deterministic",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"

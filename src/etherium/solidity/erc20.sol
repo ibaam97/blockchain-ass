@@ -31,8 +31,8 @@ contract myToken is ERC20Interface {
     
     constructor() public {
         tokenOwner = msg.sender;
-        symbol = "TESTI";
-        name = "ECC fixed supply token";
+        symbol="IBC";
+        name="Ibrahim Coin";
         decimals = 18;
         
         _totalSupply = 1000000 * 10**uint(decimals);
