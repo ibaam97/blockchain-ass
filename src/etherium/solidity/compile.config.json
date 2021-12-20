@@ -1,0 +1,11 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "": { "content": "" }
+  },
+  "settings": {
+    "outputSelection": {
+      "*": { "*": ["abi", "metadata", "evm.bytecode", "evm.sourceMap"] }
+    }
+  }
+}
